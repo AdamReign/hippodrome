@@ -9,17 +9,17 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         List<Horse> horses = List.of(
-                new Horse("Буцефал", 2.4),
-                new Horse("Туз Пик", 2.5),
-                new Horse("Зефир", 2.6),
-                new Horse("Пожар", 2.7),
-                new Horse("Лобстер", 2.8),
-                new Horse("Пегас", 2.9),
-                new Horse("Вишня", 3)
+                new Horse("Р‘СѓС†РµС„Р°Р»", 2.4),
+                new Horse("РўСѓР· РџРёРє", 2.5),
+                new Horse("Р—РµС„РёСЂ", 2.6),
+                new Horse("РџРѕР¶Р°СЂ", 2.7),
+                new Horse("Р›РѕР±СЃС‚РµСЂ", 2.8),
+                new Horse("РџРµРіР°СЃ", 2.9),
+                new Horse("Р’РёС€РЅСЏ", 3)
         );
         Hippodrome hippodrome = new Hippodrome(horses);
 
-        logger.info("Начало скачек. Количество участников: {}", horses.size());
+        logger.info("РќР°С‡Р°Р»Рѕ СЃРєР°С‡РµРє. РљРѕР»РёС‡РµСЃС‚РІРѕ СѓС‡Р°СЃС‚РЅРёРєРѕРІ: {}", horses.size());
 
         for (int i = 0; i < 100; i++) {
             hippodrome.move();
@@ -28,9 +28,9 @@ public class Main {
         }
 
         String winnerName = hippodrome.getWinner().getName();
-        System.out.println("Победил " + winnerName + "!");
+        System.out.println("РџРѕР±РµРґРёР» " + winnerName + "!");
 
-        logger.info("Окончание скачек. Победитель: {}", winnerName);
+        logger.info("РћРєРѕРЅС‡Р°РЅРёРµ СЃРєР°С‡РµРє. РџРѕР±РµРґРёС‚РµР»СЊ: {}", winnerName);
     }
 
     private static void watch(Hippodrome hippodrome) throws Exception {
