@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
     static {
+        //changes the encoding of text output to the console to UTF-8
         java.io.FileOutputStream fileOutputStream = new java.io.FileOutputStream(java.io.FileDescriptor.out);
         java.nio.charset.Charset charset = java.nio.charset.StandardCharsets.UTF_8;
         java.io.PrintStream printStream = new java.io.PrintStream(fileOutputStream, true, charset);

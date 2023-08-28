@@ -2,7 +2,7 @@
 <Configuration status="OFF" name="hippodrome" packages="">
     <Appenders>
         <RollingFile name="RollingFile" fileName="logs/hippodrome.log" filePattern="logs/hippodrome.%d{yyyy-MM-dd}.log">
-            <PatternLayout>
+            <PatternLayout charset="UTF-8">
                 <Pattern>%d %p %c{1}: %m%n</Pattern>
             </PatternLayout>
             <Policies>
@@ -14,7 +14,7 @@
                     <IfFileName glob="hippodrome.*.log"/>
                     <IfLastModified age="7d"/>
                 </Delete>
-        </DefaultRolloverStrategy>
+            </DefaultRolloverStrategy>
         </RollingFile>
     </Appenders>
     <Loggers>
